@@ -8,7 +8,7 @@ body{
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 2.4fr 0.3fr;
-    grid-template-areas: "nav nav"
+    grid-template-areas: "nav nav1"
                           "cont1 sidebar"
                           "footer sidebar";
 
@@ -28,7 +28,7 @@ margin-top: 1.5%;
     display: inline-block;
     list-style-type: none;
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 #nav ul li a {
@@ -36,6 +36,36 @@ margin-top: 1.5%;
     padding: 0px;
     color:black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav1 {
+    grid-area: nav1;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+}
+#buttonLogin, #buttonRegister {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background:white;
+    color: black;
+    font-size: 15px;
+    cursor:pointer;
+    border: none;
+}
+
+#buttonLogin:hover {
+    background:white;
+    color: black;
+    border: 1px solid black;
+}
+
+#buttonRegister:hover {
+    background:white;
+    color: black;
+    border: 1px solid black;
 }
 
 #cont1 {
@@ -47,11 +77,33 @@ margin-top: 1.5%;
 #cont1 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 500%;
+    line-height: 90%;
 }
 
 #cont1 h3{
     font-family: Arial, Helvetica, sans-serif;
+    color: gray;
     font-size: 100%;
+    line-height: 170%;   
+}
+
+#buttoncont {
+    width: 120px;
+    height: 45px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
+    display: block;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+#buttoncont:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
     
 }
 
