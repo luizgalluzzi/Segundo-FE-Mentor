@@ -10,20 +10,32 @@
 
 <body>
     <div class="container">
-        <div id="nav">
+        <nav id="nav">
             <div id="logo">
                 <img src="Assets/images/logo.svg">
             </div> 
 
-            <div id="menu">
-            <ul>
-                <li><a href="">Features <img src="Assets/images/icon-arrow-down.svg"></a></li>
-                <li><a href="">Company <img src="Assets/images/icon-arrow-down.svg"></a></li>
-                <li><a href="">Carees</a></li>
-                <li><a href="">About</a></li>
+            <ul class="menu">
+                    <li><a href="">Features <img src="Assets/images/icon-arrow-down.svg"></a>
+                        <ul class="itensFeatures">
+                            <li><a href=""><img src="Assets/images/icon-todo.svg">  Todo List</a></li>
+                            <li><a href=""><img src="Assets/images/icon-calendar.svg"> Calendar</a></li>
+                            <li><a href=""><img src="Assets/images/icon-reminders.svg"> Reminders</a></li>
+                            <li><a href=""><img src="Assets/images/icon-planning.svg"> Planning</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="">Company <img src="Assets/images/icon-arrow-down.svg"></a>
+                        <ul class="itensCompany">
+                            <li><a href="">History</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Carees</a></li>
+                    <li><a href="">About</a></li>
             </ul>
-            </div>
-        </div>
+        </nav>
 
         <div id="nav1">
             <button id="buttonLogin"><b>Login</b></button>
@@ -53,6 +65,6 @@
             </div>
         </div>
     </div>
-    
+    <script type="text/javascript" src="Assets/JS/script.js"></script>
 </body>
 </html>
